@@ -1,3 +1,9 @@
-body {
-    background-color: skyblue;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .sidebar-filter{
+    height: 100%;
+    color: white;
+} */
+

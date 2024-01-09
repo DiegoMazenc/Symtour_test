@@ -1,9 +1,12 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-	<p>Mes Articles</p>
-    {% for article in articles %}
-        <ul>
-        <li>{{ article }}</li>
-        </ul>
-    {% endfor %}
+	<p class=" bg-blue-950 ">Mes Articles</p>
+
+	{% if visible %}
+		{% for article in articles %}
+			<ul>
+				<li>{{ article }}</li>
+			</ul>
+		{% endfor %}
+	{% endif %}
 {% endblock %}

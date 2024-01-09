@@ -25,7 +25,8 @@ class DefaultController extends AbstractController
                     "titre1" => "Titre1",
                     "titre2" => "Titre2",
                     "titre3" => "Titre3"
-                ]
+                ],
+                "visible" => true
             ]
         );
     }

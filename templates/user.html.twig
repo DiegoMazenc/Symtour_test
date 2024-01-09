@@ -1,11 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>page User</h1>
-</body>
-</html>
+{% extends 'base.html.twig' %}
+{% block body %}
+	<div class="user-dashboard  flex bg-sky-950 ">
+		<div class="user-contain  basis-1/4 bg-sky-950 p-5 h-screen text-white">
+			<h4>Notifications</h4>
+		</div>
+		<div class="user-sidebar  basis-3/4 px-28 py-5 bg bg-slate-100">
+			<div class="header-user flex">
+				<img src="https://placehold.co/80" alt="">
+				<div class="user-infos">
+					<h3>User Name</h3>
+					<div class="nav-params-user">
+						<ul class="flex">
+							<li>Mes infos</li>
+							<li>Messagerie</li>
+							<li>Notifications</li>
+							<li>Paramètres</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+{% endblock %}
