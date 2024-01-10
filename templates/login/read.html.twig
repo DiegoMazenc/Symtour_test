@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <p>email : {{ user.email }}</p>
+    <p>password : {{ user.password }}</p>
+    <button>
+        <a href="{{ path('login_delete', {
+            'id': user.id,
+            'method': 'DELETE'
+        }) }}">Supprimer</a>
+    </button>
+{% endblock %}
