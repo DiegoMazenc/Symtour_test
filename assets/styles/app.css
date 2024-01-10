@@ -7,3 +7,25 @@
     color: white;
 } */
 
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.intro-login{
+width: 60%;
+padding: 15px;
+}
+
+.form-login{
+    width: 27%;
+    padding:3%;
+    text-align: center;
+}
+
+.form-login-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10% 0;
+}

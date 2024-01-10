@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserPageController!
+{% endblock %}
+
+{% block body %}
+
+	{{ form_start(form) }}
+	<div class="formulaire">
+		{# {{ form_row(form.email) }}
+					        {{ form_row(form.password) }}
+					        {{ form_row(form.submit) }} #}
+
+		{# {{ form_label(form.email, 
+				       null, {
+				        'label_attr': {
+				            'class': 'bg-blue-400',
+				            'placeholder': 'Votre Email'
+				            }
+				        }
+				       ) 
+				       }} #}
+			<div class="relative"> {{ form_widget(form.email, {
+    'attr': {
+        'class': 'rounded-lg p-2 relative border-2 border-blue-400 w-full',
+        'placeholder': 'Votre Email'
+    }
+}) }}
+			<i class="absolute text-white bottom-2 right-5">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+					<path fill="#F25F4B" d="M12 12q-1.65 0-2.825-1.175T8 8q0-1.65 1.175-2.825T12 4q1.65 0 2.825 1.175T16 8q0 1.65-1.175 2.825T12 12Zm-8 8v-2.8q0-.85.438-1.563T5.6 14.55q1.55-.775 3.15-1.163T12 13q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20H4Z"/>
+				</svg>
+			</i>
+		</div>
+
+		{# {{ form_label(form.password) }} #}
+		{{ form_widget(form.password, {
+    'attr': {
+        'class': 'rounded-lg p-2 relative border-2 border-blue-400',
+        'placeholder': 'Mot de Pass'
+    }
+}) }}
+		{{ form_row(form.submit) }}
+
+	</div>
+	{{ form_end(form) }}
+
+
+{% endblock %}
